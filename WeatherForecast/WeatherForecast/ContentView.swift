@@ -2,12 +2,16 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        HStack {
-            DayForecast(day: "Mon", isRainy: false, high: 70, low: 30)
-            
-            DayForecast(day: "Tue", isRainy: true, high: 40, low: 20)
-            
-            DayForecast(day: "Tue", isRainy: true, high: 40, low: 20)
+        ScrollView(.horizontal) {
+            HStack {
+                DayForecast(day: "Mon", isRainy: false, high: 70, low: 30)
+                
+                DayForecast(day: "Tue", isRainy: true, high: 40, low: 20)
+                
+                DayForecast(day: "Tue", isRainy: true, high: 40, low: 20)
+                
+                DayForecast(day: "Tue", isRainy: true, high: 40, low: 20)
+            }
         }
     }
 }
